@@ -29,6 +29,7 @@ function App() {
         <div className="search-box">
           <input onChange={e => setquery(e.target.value)} value={query}
             onKeyPress={search} type="text" className="search-bar" placeholder="search....." />
+            <h3 className = "app-header">Welcome to Himanshu's weather app</h3>
         </div>
         {(typeof weather.main != "undefined") ? (
           <div>
